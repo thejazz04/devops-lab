@@ -23,7 +23,7 @@ def index():
 @app.route("/reset", methods=["POST"])
 def reset():
     """Reset the visit counter to zero."""
-    r.set("visits", 0)
+    r.set("visits", 99)
     return jsonify({
         "message": "Visit counter reset to zero.",
         "visits": 0
